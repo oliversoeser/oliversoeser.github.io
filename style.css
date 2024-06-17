@@ -21,6 +21,7 @@ body {
 .icon-link {
   text-decoration: none;
   margin: 5px;
+  vertical-align: middle;
 }
 
 .game-cover {
