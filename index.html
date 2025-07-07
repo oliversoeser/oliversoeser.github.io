@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: https://ogp.me/ns#">
+<html lang="en">
   <head>
     <!-- Meta -->
     <meta charset="UTF-8" />
@@ -10,34 +10,9 @@
     <meta name="author" content="Oliver Soeser" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Oliver Soeser" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.oliversoeser.com/" />
-
-    <meta
-      property="og:image"
-      content="https://www.oliversoeser.com/img/banner.png"
-    />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1520" />
-    <meta property="og:image:height" content="730" />
-
-    <meta
-      property="og:description"
-      content="Oliver Soeser is a Computer Science and Maths student at the University of Edinburgh."
-    />
-    <meta property="og:locale" content="en_UK" />
-    <meta property="og:site_name" content="Oliver Soeser" />
-
     <title>Oliver Soeser</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
-      rel="stylesheet"
-    />
+    <!-- LaTeX.css -->
+    <link rel="stylesheet" href="https://unpkg.com/latex.css/style.min.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/style.css" />
     <!-- Favicon -->
@@ -63,256 +38,39 @@
   <body>
     <div>
       <!-- Main Title -->
-      <h1 class="name">Oliver Soeser</h1>
-      <img class="profilepic" src="./img/osoeser.jpg" />
-      <br />
-      <br />
-      <a
-        href="https://github.com/oliversoeser"
-        class="icon-link"
-        target="_blank"
-      >
-        <img src="/svg/github.svg" width="24" height="24" />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/oliversoeser/"
-        class="icon-link"
-        target="_blank"
-      >
-        <img src="/svg/linkedin.svg" width="24" height="24" />
-      </a>
-      <br /><br />
-      <hr />
-      <br />
+      <h1>Oliver Soeser</h1>
+      <figure>
+        <img class="pfp" src="./img/osoeser.jpg" />
+        <!--<figcaption></figcaption>-->
+      </figure>
     </div>
     <div>
       <!-- Main Text -->
       <!-- About -->
-      <h1>About</h1>
-      <p>
-        I am a second-year undergraduate student at the
-        University of Edinburgh, studying Computer Science and Mathematics (BSc
-        Hons). In particular, I am interested in the use and application of
-        mathematical concepts to computer programs. In addition, I have a passion
-        for teaching mathematics, computer science, and more!
-      </p>
-
-      <!-- CV -->
-      <h1>CV</h1>
-      <p>
-        I am currently looking for internships in the summer of 2025. Find my CV
-        <a href="/pdf/cv.pdf" target="_blank">here</a>.
-      </p>
-
-      <!-- Projects -->
-      <h1>Projects</h1>
-
-      <!-- Force-Directed Graphs-->
-      <div>
-        <h2>
-          Force-Directed Graphs<a
-            href="https://github.com/oliversoeser/force-graphs-ts"
-            target="_blank"
-            class="icon-link"
-            ><img src="/svg/github.svg" width="24" height="24"
-          /></a>
-        </h2>
-        <a
-          href="https://www.oliversoeser.com/force-graphs-ts/web/"
-          target="_blank"
-        >
-          <img src="/img/forcegraph.png" class="game-cover" width="80%" />
-        </a>
+      <div class="abstract">
+        <h2>About</h2>
         <p>
-          A web app written in pure TypeScript creating intelligent layouts for network graphs, using a force-directed graph drawing algorithm. This demo uses the relationships between the University of Edinburgh's College of Science and Engineering courses as an example.
+          I am an undergrad going into my third year at the University of Edinburgh, studying Computer Science
+          and Mathematics. My main interests are in applying rigorous mathematical proof methods to computer
+          programs. In addition, I have a passion for teaching mathematics and computer science!
+          <br><br>
+          Currently, I am a Scientific Intern in the <a href="https://ist.ac.at/en/research/sammler-group/" target="_blank">Sammler Group</a> at the Institute of Science and Technology
+          Austria, working on higher-order concurrent separation logic in Lean.
         </p>
       </div>
-
-      <!-- Physics Sandbox -->
-      <!--<div>
-        <h2>
-          Physics Sandbox<a
-            href="https://github.com/oliversoeser/physics-sandbox"
-            target="_blank"
-            class="icon-link"
-            ><img src="/svg/github.svg" width="24" height="24"
-          /></a>
-        </h2>
-        <a
-          href="https://www.oliversoeser.com/physics-sandbox/web/"
-          target="_blank"
-        >
-          <img src="/img/physicssandbox.png" class="game-cover" width="80%" />
-        </a>
-        <p>
-          A work-in-progress interactive physics simulator. The main aim of this project is for users to gain an intuitive understanding of Classical Mechanics through visualisation.
-        </p>
-      </div>-->
-
-      <!-- Euclid Animated -->
-      <div>
-        <h2>
-          Euclid Animated<a
-            href="https://github.com/oliversoeser/manim-euclid"
-            target="_blank"
-            class="icon-link"
-            ><img src="/svg/github.svg" width="24" height="24"
-          /></a>
-        </h2>
-        <a href="https://github.com/oliversoeser/manim-euclid" target="_blank">
-          <img src="/img/euclidanimated.png" class="game-cover" width="80%" />
-        </a>
-        <p>
-          A custom Python package extending the Manim library to create animated
-          illustrations explaining and demonstrating postulates from Euclid's
-          Elements, based on Oliver Byrne's colourful edition.
-        </p>
-      </div>
-
-      <!-- 99tracks.me -->
-      <div>
-        <h2>
-          99tracks.me<a
-            href="https://www.99tracks.me/"
-            target="_blank"
-            class="icon-link"
-            ><img src="/svg/link.svg" width="24" height="24"
-          /></a>
-        </h2>
-        <a href="https://www.99tracks.me/" target="_blank">
-          <img src="/img/99tracks.jpg" class="game-cover" width="80%" />
-        </a>
-        <p>
-          A web app showing uses their favourite songs, artists, and genres
-          based on their Spotify data. Using the "Discover" feature, users can
-          create new playlists based on their favourite tracks.
-        </p>
-      </div>
-
-      <!-- Games collection -->
-      <div>
-        <h2>
-          Games<a
-            href="https://oliver-soeser.itch.io/"
-            target="_blank"
-            class="icon-link"
-            ><img src="/svg/itchio.svg" width="24" height="24"
-          /></a>
-        </h2>
-        <p>
-          I created several games between 2020 and 2022, many of which were
-          released online. I have listed my favourites here.
-        </p>
-
-        <!-- Neopax -->
-        <h3>
-          Neopax
-        </h3>
-
-        <img
-          src="/img/neopax.png"
-          class="game-cover" width="60%"
-        />
-
-        <p>
-          My last major game development project, it was put on hold to focus on studying for my A-Levels.
-        </p>
-
-        <!-- Planet of Rogue -->
-        <h3>
-          Planet of Rogue
-          <a
-            href="https://oliver-soeser.itch.io/planet-of-rogue"
-            target="_blank"
-            class="icon-link"
-            ><img src="/svg/itchio.svg" width="24" height="24"
-          /></a>
-        </h3>
-
-        <a href="https://oliver-soeser.itch.io/planet-of-rogue" target="_blank">
-          <img class="game-cover" width="50%" src="/img/planetofrogue.png" />
-        </a>
-
-        <p>
-          My largest-ever game development project, involving an intricate
-          procedural generation algorithm automatically creating the game's
-          levels. It was released for Windows.
-        </p>
-
-        <!-- Project Cosmos -->
-        <h3>
-          Project Cosmos
-          <a
-            href="https://oliver-soeser.itch.io/project-cosmos"
-            target="_blank"
-            class="icon-link"
-            ><img src="/svg/itchio.svg" width="24" height="24"
-          /></a>
-        </h3>
-
-        <a href="https://oliver-soeser.itch.io/project-cosmos" target="_blank">
-          <img class="game-cover" width="50%" src="/img/projectcosmos.png" />
-        </a>
-
-        <p>
-          My first large-scale project, which I developed at the age of 14
-          during the first Covid lockdown. It was released on the Apple App and
-          Google Play stores, as well as for Windows.
-        </p>
-
-        <!-- Undivided -->
-        <h3>
-          Undivided
-          <a
-            href="https://arvuti.itch.io/undivided"
-            target="_blank"
-            class="icon-link"
-            ><img src="/svg/itchio.svg" width="24" height="24"
-          /></a>
-        </h3>
-
-        <a href="https://arvuti.itch.io/undivided" target="_blank">
-          <img class="game-cover" src="/img/undivided.png" width="90%" />
-        </a>
-
-        <p>
-          A web game created as part of a team of 7 in March 2020 in just 48
-          hours for the "Stay Safe!" game jam, winning in the "Best Mood Mojo"
-          category.
-        </p>
-      </div>
-
-      <!-- Contact -->
-      <h1>Contact</h1>
-      <p>
-        Feel free to email me at
-        <a href="mailto:hello@oliversoeser.com" target="_blank"
-          >hello@oliversoeser.com</a
-        >.
-      </p>
-      <p>You can also find me here:</p>
-      <a
-        href="https://github.com/oliversoeser"
-        class="icon-link"
-        target="_blank"
-      >
-        <img src="/svg/github.svg" width="24" height="24" />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/oliversoeser/"
-        class="icon-link"
-        target="_blank"
-      >
-        <img src="/svg/linkedin.svg" width="24" height="24" />
-      </a>
     </div>
     <div>
       <!-- Footer -->
       <br /><br />
+      <div class="container space-around">
+        <a href="https://github.com/oliversoeser" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/oliversoeser/" target="_blank">LinkedIn</a>
+        <a href="/pdf/cv.pdf" target="_blank">CV</a>
+        <a href="mailto:hello@oliversoeser.com" target="_blank">E-Mail</a>
+      </div>
       <hr />
       <br />
       <p>© Copyright 2025 Oliver Soeser</p>
-      <script src="/script.js"></script>
     </div>
   </body>
 </html>
