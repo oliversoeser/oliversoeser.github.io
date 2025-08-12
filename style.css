@@ -21,3 +21,11 @@ figcaption {
 .container.space-between {  
   justify-content: space-between;
 }
+
+a {
+  color: rgb(168, 0, 168)
+}
+
+a:visited {
+  color : rgb(124, 0, 168)
+}
